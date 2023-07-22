@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chick-Fly</title>
+</head>
+<body>
+    <div id="game-name"><p>Chick-Fly</p></div>
+    <div id="container">
+        <div id="score"></div>
+        <div id="start" onclick="start()">START</div>
+        <div id="canvas-limiter">
+            <div id="pause" onclick="pause()"><img src="pause-button.png"></div>
+            <div id="continue" onclick="cont()"><img src="continue-button.png"><p>CONTINUE</p></div>
+            <div id="canvas"></div>
+            <div id="chick"></div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
