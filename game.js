@@ -90,4 +90,6 @@ img.onload = render;
 
 // start game
 document.addEventListener('click', () => gamePlaying = true);
-window.onclick = () => flight = jump;
+window.onkeydown = (event) => {if (event.key === ' ') {
+    flight = jump;
+}};
