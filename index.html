@@ -4,19 +4,16 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chick-Fly</title>
+    <title>Flappy Bird</title>
 </head>
 <body>
-    <div id="game-name"><p>Chick-Fly</p></div>
-    <div id="container">
-        <div id="score"></div>
-        <div id="start" onclick="start()">START</div>
-        <div id="canvas-limiter">
-            <div id="pause" onclick="pause()"><img src="pause-button.png"></div>
-            <div id="continue" onclick="cont()"><img src="continue-button.png"><p>CONTINUE</p></div>
-            <div id="canvas"></div>
-            <div id="chick"></div>
-        </div>
+    <div id="title">Flappy Bird</div>
+    <div id="scoreContainer">
+        <span id="currentScore" class="score">Current Score: 0</span>
+        <span id="bestScore" class="score">Best Score: 0</span>
+    </div>
+    <div id="game">
+        <canvas id="canvas" width="431" height="768"></canvas>
     </div>
     <script src="game.js"></script>
 </body>
